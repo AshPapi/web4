@@ -16,7 +16,7 @@
                     <img class="pfp" src="image3.PNG"> 
                 </div> 
                 <div class="site_welcome"> 
-                    <b>Добро пожаловать на сайт FunAnimal!</b>
+                    <h5><b>Добро пожаловать на сайт FunAnimal!</b></h5>
                 </div>
             </div>
         </header> 
@@ -39,7 +39,7 @@
 
         <div class="container mt-3 hyperlink_order">
             <div class="hyperlink">
-                <b>Список гиперссылок</b>
+                <h4><b>Список гиперссылок</b></h4>
                 <ul>
                     <li> <a href="//www.kubsu.ru">Абсолютная гиперссылка на главную страницу сайта КубГУ</a></li>
                     <li> <a href="https://www.kubsu.ru">Абсолютная гиперссылка на главную сайта КубГУ в протоколе https</a></li>
@@ -76,10 +76,10 @@
             </div>
         </div>
         
-        <div class="container mt-3">
+        <div class="container mt-3 table_order">
             <div class="all_table">
-                <b>Таблица оценки мема</b> 
-                <table class="table table-responsive">
+                <h4><b>Таблица оценки мема</b> </h4>
+                <table class="table-responsive">
                     <tr style="background-color: aquamarine;">
                         <th>Процент улыбки</th>
                         <th>Смысловая нагрузка</th>
@@ -123,28 +123,28 @@
             </div>
         </div>
 
-        <div class="container mt-3">
+        <div class="container mt-3 form_order">
             <div class="all_form">
-                <b>Форма</b>
+                <h4><b>Форма</b></h4>
                 <form>
                     <div class="form-group">
-                        <label for="name">ФИО:</label>
-                        <input id="name" name="name" type="text" class="form-control" required pattern="[А-Яа-я]*?\s[А-Яа-я]*?\s[А-Яа-я]*" placeholder="Ваше ФИО"/> 
+                        <label>ФИО:</label>
+                        <input name="name" type="text" class="form-control" required pattern="[А-Яа-я]*?\s[А-Яа-я]*?\s[А-Яа-я]*" placeholder="Ваше ФИО"/> 
                     </div>
             
                     <div class="form-group">
-                        <label for="tel">Номер телефона:</label>
-                        <input id="tel" name="tel" type="tel" minlength="12" value="+7" class="form-control" pattern="+[7]{1}[0-9]{3}[0-9]{3}[0-9]{4}" required placeholder="Введите номер телефона"/>
+                        <label >Номер телефона:</label>
+                        <input name="tel" type="tel" minlength="12" value="+7" class="form-control" pattern="+[7]{1}[0-9]{3}[0-9]{3}[0-9]{4}" required placeholder="Введите номер телефона"/>
                     </div>
             
                     <div class="form-group">
-                        <label for="email">Электронная почта:</label>
-                        <input id="email" name="email" type="email" class="form-control" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Ваш email" /> 
+                        <label>Электронная почта:</label>
+                        <input name="email" type="email" class="form-control" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Ваш email" /> 
                     </div>
             
                     <div class="form-group">
-                        <label for="date">Дата:</label>
-                        <input id="date" name="date" type="date" class="form-control" required />
+                        <label>Дата:</label>
+                        <input name="date" type="date" class="form-control" required />
                     </div>
             
                     <div class="form-group">
@@ -187,19 +187,17 @@
                     <div class="form-check">
                         <label>С контрактом ознакомлен!</label>
                         <input type="checkbox" checked name="checkbox1"/>
-                        <button type="submit" class="btn btn-primary mb-3">Сохранить</button>
+                        <button type="submit" class="btn btn-primary mb-3" style="color: black;">Сохранить!</button>
                     </div>
                 </form>
             </div>
         </div>
            
-
         <footer class="container mt-3">
             <div class="footer"> 
-                <b>(с) Ашот Папикян</b>
+                <h3><b>(с) Ашот Папикян</b></h3>
             </div>
         </footer>
-
     </div>
 
 </body>

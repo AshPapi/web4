@@ -1,3 +1,8 @@
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -23,15 +28,23 @@ header{
 }
 
 .site_welcome{
+    padding-left: 10px;
+    padding-top: 10px;
     align-items: center;
-    margin-left: 10px;
-    margin-right: 10px;
     flex-wrap: wrap; 
     text-align: center;
 }
 
+.btn-primary{
+    background-color: rgba(66, 214, 214, 0.518);
+    border: 2px solid rgba(66, 214, 214, 0.518);
+    
+}
+
 .button-container{
-    order: 4;
+   a{
+    color: black;
+   }
 }
 
 .hyperlink{
@@ -61,10 +74,15 @@ header{
     border-radius: 20px;
     text-align: center;
     table{
-        margin: auto;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-bottom: 30px;
+        td{
+            border: 1px solid black;
+        }
+        th{
+            border: 1px solid black;
+        }
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
     }
 }
 
@@ -82,11 +100,20 @@ footer{
     align-items: center; 
     background-color: rgba(130, 233, 233, 0.518);
     height: 70px;
+    order: 3;
 }
 
+.hyperlink_order{
+    order: 1;
+}
 
+.table_order{
+    order: 0;
+}
 
-
+.form_order{
+    order: 2;
+}
 
 
 

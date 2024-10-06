@@ -95,12 +95,29 @@ header{
     padding-right: 10px;
 }
 
+.form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form-control{
+    width: 70%;
+}
+
 footer{
-    display: flex; 
-    align-items: center; 
     background-color: rgba(130, 233, 233, 0.518);
     height: 70px;
     order: 3;
+}
+
+.footering{
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    padding-top: 15px;
 }
 
 .hyperlink_order{
@@ -124,141 +141,107 @@ footer{
 
 @media (min-device-width: 576px){
     .button-container {
-        position: absolute; /* Используем фиксированное позиционирование для размещения в углу */
-        top: 10px;         /* Расстояние от верхнего края */
-        right: 10px;       /* Расстояние от правого края */
-        z-index: 1000;     /* Убедитесь, что кнопки находятся сверху других элементов */
+        position: static; 
+        right: 0;
+        z-index: 1000;    
+    }
+    
+    .btn{
+        
+        padding: 10px 20px;
     }
 
+    .flex-container{
+        display: flex;
+    }
+    
+    body{
+        margin: 0;
+        padding: 0;
+        background-color:  rgba(130, 233, 233, 0.518);
+    }
+    
     header{
-        margin-bottom: 30px;
         background-color: rgba(130, 233, 233, 0.518);
         height: 70px;
-        order: 0;
     }
     
-    .flex-container1{
-        text-align: center;
-        display: flex;
-        flex-direction: row; 
+    .heading {
+        display: block;
+        flex-direction: column; 
     }
-    
+
     .pfp{
         position: absolute;
-        margin-top: -5px;
-        margin-left: 10px;
         border-radius: 100%;
-        width: 60px;
+        width: 65px;
     }
     
     .site_welcome{
-        position: relative;
-        margin: auto;
+        padding-top: 20px;
         text-align: center;
-        font-size: 15px;
-        font-family: "Lucida Console", monotype;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     
-    nav{
-        background-color: rgba(130, 233, 233, 0.518);
-        order: -1;
-        height: 70px;
-    }
-
-    .navigation_button_text{
-        font-size: 15px;
-        font-family: "Lucida Console", monotype; 
-    }
-
-    .navigation ul{
-        padding-right: 12px;
+    .btn-primary{
+        background-color: rgba(66, 214, 214, 0.518);
+        border: 2px solid rgba(66, 214, 214, 0.518);
+        
     }
     
-    .navigation li{
-        border-radius: 10%;
-        margin-right: 20px;
-        width: 100%;
-        margin-left: -10px;
-        list-style-type: none;
-        background-color: rgba(48, 206, 206, 0.518);
+    .button-container{
+       a{
+        color: black;
+       }
     }
     
-    .navigation ul li a {
-        display: block;
-        color: #000;
-        text-decoration: none;
-    }
-    
-    .hyperlink_main-text{
-        margin-top:25px;
-        text-align: center;
-        padding-left: 15px;
-        font-size: 15px;
-        font-family: "Lucida Console", monotype; 
-    }
-    
-    .hyperlink img{
-        width: 300px;
-    }
-
     .hyperlink{
+        li{
+            list-style-type: none;
+        }
+        
+        ul{
+            padding: 0;
+            margin: 0;
+        }
+        img{
+            width: 50%;
+        }
+        background-color:rgba(144, 231, 231, 0.518);
+        border-radius: 20px;
+        align-items: center;
         text-align: center;
-        font-size: 13px;
-        font-family: "Lucida Console", monotype; 
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
     }
     
-    table{
-        margin: auto;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-bottom: 30px;
-    }
-    
-    .name_table{
-        margin-top: 25px;
-        font-size: 15px;
-        font-family: "Lucida Console", monotype; 
+    .all_table{
+        margin-bottom: 20px;
+        background-color:rgba(144, 231, 231, 0.518);
+        border-radius: 20px;
         text-align: center;
-    }
-    
-    .form_name{
-        margin-top: 15px;
-        text-align: center;
-        font-family: "Lucida Console", monotype; 
-    }
-    
-    form label div{
-        margin-top: 15px;
+        table{
+            td{
+                border: 1px solid black;
+            }
+            th{
+                border: 1px solid black;
+            }
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+        }
     }
     
     .all_form{
+        background-color:rgba(144, 231, 231, 0.518);
+        border-radius: 20px;
         text-align: center;
-        font-size: 15px;
-        font-family: "Lucida Console", monotype; 
-        border-radius: 10%;
-        background-color:rgba(130, 233, 233, 0.518);
-        padding-top: 15px;
-        margin-bottom: 40px;
-    }
-    
-    form{
-        padding-bottom: 10px;
-    }
-    
-    .marker{
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    
-    .lang_text{
-        font-size: 15px;
-        margin-top: 15px;
-        text-align: center;
-        font-family: "Lucida Console", monotype; 
-    }
-    
-    .accept{
-        margin-bottom: 25px;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     
     footer{
@@ -267,183 +250,136 @@ footer{
         order: 3;
     }
     
-    .text_footer{
-        font-size: 20px;
-        padding-top: 25px;
-        font-family: "Lucida Console", monotype; 
+    .footering{
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        padding-top: 15px;
     }
     
-    .change_tabl{
-        margin-top: 20px;
-        margin-bottom: 40px;
-        border-radius: 10%;
-        background-color:rgba(130, 233, 233, 0.518);
+    nav{
+        background-color: rgb(130, 233, 233, 0.518);
+        order: -1;
+    }
+
+    .hyperlink_order{
+        order: 0;
+    }
+    
+    .table_order{
         order: 1;
-        font-size: 12px;
-        font-family: "Lucida Console", monotype; 
     }
     
-    .change_form{
+    .form_order{
         order: 2;
     }
-    
-    .change_hyperlink{
-        margin-bottom: 40px;
-        border-radius: 5%;
-        background-color:rgba(130, 233, 233, 0.518);
-        order: 0
-    }
-
-    .block_chang_hyp{
-        width: 85%;
-        margin: auto;
-        margin-bottom: 30px;
-    }
-
-    .block_chang_table{
-        width: 85%;
-        margin: auto;
-        margin-bottom: 30px;
-    }
-
-    .block_chang_form{
-        width: 85%;
-        margin: auto;
-        margin-bottom: 30px;
-    }
-
 }
 
 @media (min-device-width: 768px){
-    header{
-        margin-bottom: 30px;
-        background-color: rgba(130, 233, 233, 0.518);
-        height: 70px;
-        order: 0;
-    }
-
-    .flex-container1{
-        text-align: center;
-        display: flex;
-        flex-direction: row; 
+    .button-container {
+        position: static; 
+        right: 0;
+        z-index: 1000;    
     }
     
+    .btn{
+        
+        padding: 10px 20px;
+    }
+
+    .flex-container{
+        display: flex;
+    }
+    
+    body{
+        margin: 0;
+        padding: 0;
+        background-color:  rgba(130, 233, 233, 0.518);
+    }
+    
+    header{
+        background-color: rgba(130, 233, 233, 0.518);
+        height: 70px;
+    }
+    
+    .heading {
+        display: block;
+        flex-direction: column; 
+    }
+
     .pfp{
         position: absolute;
-        margin-top: -5px;
-        margin-left: 10px;
+        padding-top: 5px;
+        padding-left: 5px;  
         border-radius: 100%;
-        width: 60px;
+        width: 65px;
     }
     
     .site_welcome{
-        position: relative;
-        margin: auto;
+        padding-top: 20px;
         text-align: center;
-        font-size: 15px;
-        font-family: "Lucida Console", monotype;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     
-    nav{
-        background-color: rgba(130, 233, 233, 0.518);
-        order: -1;
-        height: 70px;
-    }
-
-    .navigation_button_text{
-        font-size: 15px;
-        font-family: "Lucida Console", monotype; 
-    }
-
-    .navigation ul{
-        padding-right: 14px;
+    .btn-primary{
+        background-color: rgba(66, 214, 214, 0.518);
+        border: 2px solid rgba(66, 214, 214, 0.518);
+        
     }
     
-    .navigation li{
-        border-radius: 10%;
-        margin-right: 20px;
-        width: 100%;
-        margin-left: -10px;
-        list-style-type: none;
-        background-color: rgba(48, 206, 206, 0.518);
+    .button-container{
+       a{
+        color: black;
+       }
     }
     
-    .navigation ul li a {
-        display: block;
-        color: #000;
-        text-decoration: none;
-    }
-    
-    .hyperlink_main-text{
-        margin-top:25px;
-        text-align: center;
-        padding-left: 15px;
-        font-size: 15px;
-        font-family: "Lucida Console", monotype; 
-    }
-    
-    .hyperlink img{
-        width: 300px;
-    }
-
     .hyperlink{
+        li{
+            list-style-type: none;
+        }
+        
+        ul{
+            padding: 0;
+            margin: 0;
+        }
+        img{
+            width: 50%;
+        }
+        background-color:rgba(144, 231, 231, 0.518);
+        border-radius: 20px;
+        align-items: center;
         text-align: center;
-        font-size: 13px;
-        font-family: "Lucida Console", monotype; 
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
     }
     
-    table{
-        margin: auto;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-bottom: 30px;
-    }
-    
-    .name_table{
-        margin-top: 25px;
-        font-size: 15px;
-        font-family: "Lucida Console", monotype; 
+    .all_table{
+        margin-bottom: 20px;
+        background-color:rgba(144, 231, 231, 0.518);
+        border-radius: 20px;
         text-align: center;
-    }
-    
-    .form_name{
-        margin-top: 15px;
-        text-align: center;
-        font-family: "Lucida Console", monotype; 
-    }
-    
-    form label div{
-        margin-top: 15px;
+        table{
+            td{
+                border: 1px solid black;
+            }
+            th{
+                border: 1px solid black;
+            }
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+        }
     }
     
     .all_form{
+        background-color:rgba(144, 231, 231, 0.518);
+        border-radius: 20px;
         text-align: center;
-        font-size: 15px;
-        font-family: "Lucida Console", monotype; 
-        border-radius: 10%;
-        background-color:rgba(130, 233, 233, 0.518);
-        padding-top: 15px;
-        margin-bottom: 40px;
-    }
-    
-    form{
-        padding-bottom: 10px;
-    }
-    
-    .marker{
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    
-    .lang_text{
-        font-size: 15px;
-        margin-top: 15px;
-        text-align: center;
-        font-family: "Lucida Console", monotype; 
-    }
-    
-    .accept{
-        margin-bottom: 25px;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     
     footer{
@@ -452,182 +388,135 @@ footer{
         order: 3;
     }
     
-    .text_footer{
-        font-size: 20px;
-        padding-top: 25px;
-        font-family: "Lucida Console", monotype; 
+    .footering{
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        padding-top: 15px;
     }
     
-    .change_tabl{
-        margin-top: 20px;
-        margin-bottom: 40px;
-        border-radius: 10%;
-        background-color:rgba(130, 233, 233, 0.518);
+    .hyperlink_order{
+        order: 0;
+    }
+    
+    .table_order{
         order: 1;
-        font-size: 12px;
-        font-family: "Lucida Console", monotype; 
     }
     
-    .change_form{
+    .form_order{
         order: 2;
-    }
-    
-    .change_hyperlink{
-        margin-bottom: 40px;
-        border-radius: 5%;
-        background-color:rgba(130, 233, 233, 0.518);
-        order: 0
-    }
-
-    .block_chang_hyp{
-        width: 85%;
-        margin: auto;
-        margin-bottom: 30px;
-    }
-
-    .block_chang_table{
-        width: 85%;
-        margin: auto;
-        margin-bottom: 30px;
-    }
-
-    .block_chang_form{
-        width: 85%;
-        margin: auto;
-        margin-bottom: 30px;
     }
 }
+
     
 @media (min-device-width: 992px){
-    header{
-        margin-bottom: 30px;
-        background-color: rgba(130, 233, 233, 0.518);
-        height: 70px;
-        order: 0;
-    }
-
-    .flex-container1{
-        text-align: center;
-        display: flex;
-        flex-direction: row; 
+    .button-container {
+        position: static; 
+        right: 0;
+        z-index: 1000;    
     }
     
+    .btn{
+        
+        padding: 10px 20px;
+    }
+
+    .flex-container{
+        display: flex;
+    }
+    
+    body{
+        margin: 0;
+        padding: 0;
+        background-color:  rgba(130, 233, 233, 0.518);
+    }
+    
+    header{
+        background-color: rgba(130, 233, 233, 0.518);
+        height: 70px;
+    }
+    
+    .heading {
+        display: block;
+        flex-direction: column; 
+    }
+
     .pfp{
         position: absolute;
-        margin-top: -5px;
-        margin-left: 10px;
+        padding-top: 5px;
+        padding-left: 5px;  
         border-radius: 100%;
-        width: 60px;
+        width: 65px;
     }
     
     .site_welcome{
-        position: relative;
-        margin: auto;
+        padding-top: 20px;
         text-align: center;
-        font-size: 15px;
-        font-family: "Lucida Console", monotype;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     
-    nav{
-        background-color: rgba(130, 233, 233, 0.518);
-        order: -1;
-        height: 70px;
-    }
-
-    .navigation_button_text{
-        font-size: 15px;
-        font-family: "Lucida Console", monotype; 
-    }
-
-    .navigation ul{
-        padding-right: 14px;
+    .btn-primary{
+        background-color: rgba(66, 214, 214, 0.518);
+        border: 2px solid rgba(66, 214, 214, 0.518);
+        
     }
     
-    .navigation li{
-        border-radius: 10%;
-        margin-right: 20px;
-        width: 100%;
-        margin-left: -10px;
-        list-style-type: none;
-        background-color: rgba(48, 206, 206, 0.518);
+    .button-container{
+       a{
+        color: black;
+       }
     }
     
-    .navigation ul li a {
-        display: block;
-        color: #000;
-        text-decoration: none;
-    }
-    
-    .hyperlink_main-text{
-        margin-top:25px;
-        text-align: center;
-        padding-left: 15px;
-        font-size: 15px;
-        font-family: "Lucida Console", monotype; 
-    }
-    
-    .hyperlink img{
-        width: 300px;
-    }
-
     .hyperlink{
+        li{
+            list-style-type: none;
+        }
+        
+        ul{
+            padding: 0;
+            margin: 0;
+        }
+        img{
+            width: 50%;
+        }
+        background-color:rgba(144, 231, 231, 0.518);
+        border-radius: 20px;
+        align-items: center;
         text-align: center;
-        font-size: 13px;
-        font-family: "Lucida Console", monotype; 
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
     }
     
-    table{
-        margin: auto;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-bottom: 30px;
-    }
-    
-    .name_table{
-        margin-top: 25px;
-        font-size: 15px;
-        font-family: "Lucida Console", monotype; 
+    .all_table{
+        margin-bottom: 20px;
+        background-color:rgba(144, 231, 231, 0.518);
+        border-radius: 20px;
         text-align: center;
-    }
-    
-    .form_name{
-        margin-top: 15px;
-        text-align: center;
-        font-family: "Lucida Console", monotype; 
-    }
-    
-    form label div{
-        margin-top: 15px;
+        table{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            td{
+                border: 1px solid black;
+            }
+            th{
+                border: 1px solid black;
+            }
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+        }
     }
     
     .all_form{
+        background-color:rgba(144, 231, 231, 0.518);
+        border-radius: 20px;
         text-align: center;
-        font-size: 15px;
-        font-family: "Lucida Console", monotype; 
-        border-radius: 10%;
-        background-color:rgba(130, 233, 233, 0.518);
-        padding-top: 15px;
-        margin-bottom: 40px;
-    }
-    
-    form{
-        padding-bottom: 10px;
-    }
-    
-    .marker{
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    
-    .lang_text{
-        font-size: 15px;
-        margin-top: 15px;
-        text-align: center;
-        font-family: "Lucida Console", monotype; 
-    }
-    
-    .accept{
-        margin-bottom: 25px;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     
     footer{
@@ -636,181 +525,131 @@ footer{
         order: 3;
     }
     
-    .text_footer{
-        font-size: 20px;
-        padding-top: 25px;
-        font-family: "Lucida Console", monotype; 
+    .footering{
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        padding-top: 15px;
     }
     
-    .change_tabl{
-        margin-top: 20px;
-        margin-bottom: 40px;
-        border-radius: 10%;
-        background-color:rgba(130, 233, 233, 0.518);
+    .hyperlink_order{
+        order: 0;
+    }
+    
+    .table_order{
         order: 1;
-        font-size: 12px;
-        font-family: "Lucida Console", monotype; 
     }
     
-    .change_form{
+    .form_order{
         order: 2;
-    }
-    
-    .change_hyperlink{
-        margin-bottom: 40px;
-        border-radius: 5%;
-        background-color:rgba(130, 233, 233, 0.518);
-        order: 0
-    }
-
-    .block_chang_hyp{
-        width: 85%;
-        margin: auto;
-        margin-bottom: 30px;
-    }
-
-    .block_chang_table{
-        width: 85%;
-        margin: auto;
-        margin-bottom: 30px;
-    }
-
-    .block_chang_form{
-        width: 85%;
-        margin: auto;
-        margin-bottom: 30px;
     }
 }
 
 @media (min-device-width: 1200px){
-    header{
-        margin-bottom: 30px;
-        background-color: rgba(130, 233, 233, 0.518);
-        height: 70px;
-        order: 0;
-    }
-
-    .flex-container1{
-        text-align: center;
-        display: flex;
-        flex-direction: row; 
+    .button-container {
+        position: static; 
+        right: 0;
+        z-index: 1000;    
     }
     
+    .btn{
+        
+        padding: 10px 20px;
+    }
+
+    .flex-container{
+        display: flex;
+    }
+    
+    body{
+        margin: 0;
+        padding: 0;
+        background-color:  rgba(130, 233, 233, 0.518);
+    }
+    
+    header{
+        background-color: rgba(130, 233, 233, 0.518);
+        height: 70px;
+    }
+    
+    .heading {
+        display: block;
+        flex-direction: column; 
+    }
+
     .pfp{
         position: absolute;
-        margin-left: 10px;
+        padding-top: 5px;
+        padding-left: 5px;  
         border-radius: 100%;
-        width: 60px;
+        width: 65px;
     }
     
     .site_welcome{
-        position: relative;
-        margin: auto;
+        padding-top: 20px;
         text-align: center;
-        font-size: 15px;
-        font-family: "Lucida Console", monotype;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     
-    nav{
-        background-color: rgba(130, 233, 233, 0.518);
-        order: -1;
-        height: 70px;
-    }
-
-    .navigation_button_text{
-        font-size: 15px;
-        font-family: "Lucida Console", monotype; 
-    }
-
-    .navigation ul{
-        padding-right: 14px;
+    .btn-primary{
+        background-color: rgba(66, 214, 214, 0.518);
+        border: 2px solid rgba(66, 214, 214, 0.518);
+        
     }
     
-    .navigation li{
-        border-radius: 10%;
-        margin-right: 20px;
-        width: 100%;
-        margin-left: -10px;
-        list-style-type: none;
-        background-color: rgba(48, 206, 206, 0.518);
+    .button-container{
+       a{
+        color: black;
+       }
     }
     
-    .navigation ul li a {
-        display: block;
-        color: #000;
-        text-decoration: none;
-    }
-    
-    .hyperlink_main-text{
-        margin-top:25px;
-        text-align: center;
-        padding-left: 15px;
-        font-size: 15px;
-        font-family: "Lucida Console", monotype; 
-    }
-    
-    .hyperlink img{
-        width: 300px;
-    }
-
     .hyperlink{
+        li{
+            list-style-type: none;
+        }
+        
+        ul{
+            padding: 0;
+            margin: 0;
+        }
+        img{
+            width: 50%;
+        }
+        background-color:rgba(144, 231, 231, 0.518);
+        border-radius: 20px;
+        align-items: center;
         text-align: center;
-        font-size: 13px;
-        font-family: "Lucida Console", monotype; 
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
     }
     
-    table{
-        margin: auto;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-bottom: 30px;
-    }
-    
-    .name_table{
-        margin-top: 25px;
-        font-size: 15px;
-        font-family: "Lucida Console", monotype; 
+    .all_table{
+        margin-bottom: 20px;
+        background-color:rgba(144, 231, 231, 0.518);
+        border-radius: 20px;
         text-align: center;
-    }
-    
-    .form_name{
-        margin-top: 15px;
-        text-align: center;
-        font-family: "Lucida Console", monotype; 
-    }
-    
-    form label div{
-        margin-top: 15px;
+        table{
+            td{
+                border: 1px solid black;
+            }
+            th{
+                border: 1px solid black;
+            }
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+        }
     }
     
     .all_form{
+        background-color:rgba(144, 231, 231, 0.518);
+        border-radius: 20px;
         text-align: center;
-        font-size: 15px;
-        font-family: "Lucida Console", monotype; 
-        border-radius: 10%;
-        background-color:rgba(130, 233, 233, 0.518);
-        padding-top: 15px;
-        margin-bottom: 40px;
-    }
-    
-    form{
-        padding-bottom: 10px;
-    }
-    
-    .marker{
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    
-    .lang_text{
-        font-size: 15px;
-        margin-top: 15px;
-        text-align: center;
-        font-family: "Lucida Console", monotype; 
-    }
-    
-    .accept{
-        margin-bottom: 25px;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     
     footer{
@@ -819,48 +658,22 @@ footer{
         order: 3;
     }
     
-    .text_footer{
-        font-size: 20px;
-        padding-top: 25px;
-        font-family: "Lucida Console", monotype; 
+    .footering{
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        padding-top: 15px;
     }
     
-    .change_tabl{
-        margin-top: 20px;
-        margin-bottom: 40px;
-        border-radius: 10%;
-        background-color:rgba(130, 233, 233, 0.518);
+    .hyperlink_order{
+        order: 0;
+    }
+    
+    .table_order{
         order: 1;
-        font-size: 12px;
-        font-family: "Lucida Console", monotype; 
     }
     
-    .change_form{
+    .form_order{
         order: 2;
-    }
-    
-    .change_hyperlink{
-        margin-bottom: 40px;
-        border-radius: 5%;
-        background-color:rgba(130, 233, 233, 0.518);
-        order: 0
-    }
-
-    .block_chang_hyp{
-        width: 85%;
-        margin: auto;
-        margin-bottom: 30px;
-    }
-
-    .block_chang_table{
-        width: 85%;
-        margin: auto;
-        margin-bottom: 30px;
-    }
-
-    .block_chang_form{
-        width: 85%;
-        margin: auto;
-        margin-bottom: 30px;
     }
 }

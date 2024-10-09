@@ -85,8 +85,6 @@ header{
 }
 
 .all_form{
-    overflow-x: auto;
-    display: block;
     background-color:rgba(144, 231, 231, 0.518);
     border-radius: 20px;
     text-align: center;
@@ -623,11 +621,10 @@ footer{
     }
     
     .all_form{
-        display: flex;
-        justify-content: center;
+        background-color:rgba(144, 231, 231, 0.518);
+        border-radius: 20px;
         text-align: center;
         align-items: center;
-        background-color:rgba(144, 231, 231, 0.518);
         padding-left: 10px;
         padding-right: 10px;
     }

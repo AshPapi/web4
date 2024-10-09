@@ -69,24 +69,24 @@ header{
 }
 
 .all_table{
-    margin-bottom: 20px;
+    overflow-x: auto;
+    display: block;
+    text-align: center;
     background-color:rgba(144, 231, 231, 0.518);
     border-radius: 20px;
-    text-align: center;
     table{
         td{
             border: 1px solid black;
         }
         th{
             border: 1px solid black;
-        }
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 20px;
+        }        
     }
 }
 
 .all_form{
+    overflow-x: auto;
+    display: block;
     background-color:rgba(144, 231, 231, 0.518);
     border-radius: 20px;
     text-align: center;
@@ -131,12 +131,6 @@ footer{
 .form_order{
     order: 2;
 }
-
-
-
-
-
-
 
 
 @media (min-device-width: 576px){
@@ -218,22 +212,19 @@ footer{
     }
     
     .all_table{
-        margin-bottom: 20px;
+        text-align: center;
         background-color:rgba(144, 231, 231, 0.518);
         border-radius: 20px;
-        text-align: center;
         table{
             td{
                 border: 1px solid black;
             }
             th{
                 border: 1px solid black;
-            }
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-bottom: 20px;
+            }        
         }
     }
+    
     
     .all_form{
         background-color:rgba(144, 231, 231, 0.518);
@@ -356,10 +347,9 @@ footer{
     }
     
     .all_table{
-        margin-bottom: 20px;
+        text-align: center;
         background-color:rgba(144, 231, 231, 0.518);
         border-radius: 20px;
-        text-align: center;
         table{
             td{
                 border: 1px solid black;
@@ -367,9 +357,6 @@ footer{
             th{
                 border: 1px solid black;
             }
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-bottom: 20px;
         }
     }
     
@@ -488,25 +475,21 @@ footer{
         padding-right: 5px;
         padding-bottom: 5px;
     }
-    
+
     .all_table{
-        margin-bottom: 20px;
+        text-align: center;
         background-color:rgba(144, 231, 231, 0.518);
         border-radius: 20px;
-        text-align: center;
         table{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            .table_responsive{
+                height: 200px;
+            }
             td{
                 border: 1px solid black;
             }
             th{
                 border: 1px solid black;
             }
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-bottom: 20px;
         }
     }
     
@@ -624,12 +607,11 @@ footer{
         padding-right: 5px;
         padding-bottom: 5px;
     }
-    
+     
     .all_table{
-        margin-bottom: 20px;
+        text-align: center;
         background-color:rgba(144, 231, 231, 0.518);
         border-radius: 20px;
-        text-align: center;
         table{
             td{
                 border: 1px solid black;
@@ -637,17 +619,15 @@ footer{
             th{
                 border: 1px solid black;
             }
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-bottom: 20px;
         }
     }
     
     .all_form{
-        background-color:rgba(144, 231, 231, 0.518);
-        border-radius: 20px;
+        display: flex;
+        justify-content: center;
         text-align: center;
         align-items: center;
+        background-color:rgba(144, 231, 231, 0.518);
         padding-left: 10px;
         padding-right: 10px;
     }
